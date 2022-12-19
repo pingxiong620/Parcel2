@@ -19,11 +19,7 @@
   },
   "scripts": {
     "pbuild": "parcel build public/index.html --no-optimize --dist-dir build",
-    "pstart": "parcel public/index.html --port 3000",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "pstart": "parcel public/index.html --port 3000"
   },
   "eslintConfig": {
     "extends": [
