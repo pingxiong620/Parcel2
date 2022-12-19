@@ -1,0 +1,2421 @@
+{
+  "version": 1,
+  "domainId": 4,
+  "impactDefinitions": [
+    {
+      "sequenceNumber": 1,
+      "label": "Minor",
+      "rdfIri": "MINOR"
+    },
+    {
+      "sequenceNumber": 2,
+      "label": "Moderate",
+      "rdfIri": "MODERATE"
+    },
+    {
+      "sequenceNumber": 3,
+      "label": "Significant",
+      "rdfIri": "SIGNIFICANT"
+    }
+  ],
+  "severityDefinitions": [
+    {
+      "label": "Nominal",
+      "sequenceNumber": 1,
+      "demerit": 0,
+      "rdfIri": "NOMINAL"
+    },
+    {
+      "label": "Low",
+      "sequenceNumber": 2,
+      "demerit": 1,
+      "rdfIri": "LOW"
+    },
+    {
+      "label": "Medium",
+      "sequenceNumber": 3,
+      "demerit": 10,
+      "rdfIri": "MEDIUM"
+    },
+    {
+      "label": "High",
+      "sequenceNumber": 4,
+      "demerit": 50,
+      "rdfIri": "HIGH"
+    }
+  ],
+  "categoryDescriptions": null,
+  "ruleDefinition": {
+    "rulesetId": "00000000-0000-0000-0000-000000000008",
+    "factoryDefault": true,
+    "riskSettingName": "Account_Entitlement_Default",
+    "creator": "SIDEMO",
+    "reportType": "ACCOUNTENTITLEMENT",
+    "hash": "3303816694DCA6E512B8E78F60AEFCEB79194510CC40E9BA8203F962E8C378A8",
+    "reportOptions": null,
+    "esm": "ACF2"
+  },
+  "parameters": [
+    {
+      "ruleTemplateId": 412,
+      "ruleName": "Special Use fields of the ACF2 logonid record can grant special privileges that affect ACF2 validation.",
+      "ruleNameRdfIri": "UC4_OBJ_13_ESM_PRIV_SPL_USE_PRIVILEGES_R1",
+      "objectKey": 3013,
+      "objectName": "specialUsePrivileges",
+      "objectNameRdfIri": "UC4_OBJ_13_ESM_PRIV_SPL_USE_PRIVILEGES",
+      "objectTitle": "Special Use Privileges",
+      "notes": "",
+      "objectType": "string",
+      "inputType": "enumeration",
+      "active": true,
+      "allowedValues": [
+        "DUMPAUTH",
+        "JOBFROM",
+        "MAINT",
+        "MOUNT",
+        "MUSASS",
+        "NON-CNCL",
+        "NORSRCVLD",
+        "NORULEVLD",
+        "OPERATOR",
+        "PREFIX",
+        "PRIV-CTL",
+        "READALL",
+        "REFRESH",
+        "RESTRICT",
+        "STC",
+        "TAPE-BLP"
+      ],
+      "attributes": [
+        {
+          "value": "DUMPAUTH",
+          "min": null,
+          "max": null,
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true
+        },
+        {
+          "value": "JOBFROM",
+          "min": null,
+          "max": null,
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true
+        },
+        {
+          "value": "MAINT",
+          "min": null,
+          "max": null,
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true
+        },
+        {
+          "value": "MOUNT",
+          "min": null,
+          "max": null,
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true
+        },
+        {
+          "value": "MUSASS",
+          "min": null,
+          "max": null,
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true
+        },
+        {
+          "value": "NON-CNCL",
+          "min": null,
+          "max": null,
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true
+        },
+        {
+          "value": "NORSRCVLD",
+          "min": null,
+          "max": null,
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true
+        },
+        {
+          "value": "NORULEVLD",
+          "min": null,
+          "max": null,
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true
+        },
+        {
+          "value": "OPERATOR",
+          "min": null,
+          "max": null,
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true
+        },
+        {
+          "value": "PREFIX",
+          "min": null,
+          "max": null,
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true
+        },
+        {
+          "value": "PRIV-CTL",
+          "min": null,
+          "max": null,
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true
+        },
+        {
+          "value": "READALL",
+          "min": null,
+          "max": null,
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true
+        },
+        {
+          "value": "REFRESH",
+          "min": null,
+          "max": null,
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true
+        },
+        {
+          "value": "RESTRICT",
+          "min": null,
+          "max": null,
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true
+        },
+        {
+          "value": "STC",
+          "min": null,
+          "max": null,
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true
+        },
+        {
+          "value": "TAPE-BLP",
+          "min": null,
+          "max": null,
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true
+        }
+      ],
+      "recommendation": {
+        "recommendationRdfIri": null,
+        "recommendations": null
+      }
+    },
+    {
+      "ruleTemplateId": 411,
+      "ruleName": "User privilege fields determine the privileges that are assigned to ACF2 logonid records. A unique privilege is assigned to a type of role (for example, Security Administrator, Auditor, Account Manager, Group Leader, or Consultant) that controls the action they can perform.",
+      "ruleNameRdfIri": "UC4_OBJ_12_ESM_PRIV_ADMIN_PRIVILEGES_R1",
+      "objectKey": 3012,
+      "objectName": "administrativePrivileges",
+      "objectNameRdfIri": "UC4_OBJ_12_ESM_PRIV_ADMIN_PRIVILEGES",
+      "objectTitle": "Administrative Privileges",
+      "notes": "",
+      "objectType": "string",
+      "inputType": "enumeration",
+      "active": true,
+      "allowedValues": ["ACCOUNT", "AUDIT", "CONSULT", "LEADER", "SECURITY"],
+      "attributes": [
+        {
+          "value": "ACCOUNT",
+          "min": null,
+          "max": null,
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true
+        },
+        {
+          "value": "AUDIT",
+          "min": null,
+          "max": null,
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true
+        },
+        {
+          "value": "CONSULT",
+          "min": null,
+          "max": null,
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true
+        },
+        {
+          "value": "LEADER",
+          "min": null,
+          "max": null,
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true
+        },
+        {
+          "value": "SECURITY",
+          "min": null,
+          "max": null,
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true
+        }
+      ],
+      "recommendation": {
+        "recommendationRdfIri": null,
+        "recommendations": null
+      }
+    },
+    {
+      "ruleTemplateId": 415,
+      "ruleName": "IDs with a value of 0 in the UID parameter of the OMVS segment defines them as superusers. This designation allows them to enter Unix commands that can damage the file system. As a best practice, limit UID(0) to started task procedures such as OMVS Kernel or UNIX daemons and reassign a unique, non-zero UID to real users.",
+      "ruleNameRdfIri": "UC4_OBJ_16_UID_0_R1",
+      "objectKey": 3016,
+      "objectName": "uid0",
+      "objectNameRdfIri": "UC4_OBJ_16_UID_0",
+      "objectTitle": "UID(0)",
+      "notes": "",
+      "objectType": "string",
+      "inputType": "enumeration",
+      "active": true,
+      "allowedValues": ["YES"],
+      "attributes": [
+        {
+          "value": "YES",
+          "min": null,
+          "max": null,
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true
+        }
+      ],
+      "recommendation": {
+        "recommendationRdfIri": null,
+        "recommendations": null
+      }
+    }
+  ],
+  "compositeParameters": [
+    {
+      "ruleTemplateId": 413,
+      "ruleName": "The system-critical resource privileges provide accounts the ability to change security controls and system configurations, access sensitive data, and circumvent monitoring and detection.",
+      "ruleNameRdfIri": "UC4_SYSTEM_RESOURCES_CMPSTE_R1",
+      "active": true,
+      "notes": "",
+      "ruleParameterRows": [
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 4,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "WRITE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "SYS1.PARMLIB",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "DSN",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "DATASET",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 5,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "ALLOCATE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "SYS1.LINKLIB",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "DSN",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "DATASET",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 6,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "WRITE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "SYS1.LINKLIB",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "DSN",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "DATASET",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 7,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "ALLOCATE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "SYS1.SVCLIB",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "DSN",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "DATASET",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 8,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "WRITE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "SYS1.SVCLIB",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "DSN",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "DATASET",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 9,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "ALLOCATE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "SYS1.IMAGELIB",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "DSN",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "DATASET",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 10,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "WRITE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "SYS1.IMAGELIB",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "DSN",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "DATASET",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 11,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "ALLOCATE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "SYS1.LPALIB",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "DSN",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "DATASET",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 12,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "WRITE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "SYS1.LPALIB",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "DSN",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "DATASET",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 13,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "ALLOCATE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "SYS1.NUCLEUS",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "DSN",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "DATASET",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 1,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "ALLOCATE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "SYS1.PROCLIB",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "DSN",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "DATASET",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 14,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "WRITE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "SYS1.NUCLEUS",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "DSN",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "DATASET",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 2,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "WRITE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "SYS1.PROCLIB",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "DSN",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "DATASET",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 15,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "ALLOCATE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "SYS1.UADS",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "DSN",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "DATASET",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 3,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "ALLOCATE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "SYS1.PARMLIB",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "DSN",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "DATASET",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 16,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "WRITE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "SYS1.UADS",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "DSN",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "DATASET",
+              "objectKey": 3005
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ruleTemplateId": 414,
+      "ruleName": "Entitlements to z/OS Unix System Services (USS) resources such as BPX.SUPERUSER resource in the FACILITY class enable a user to pass all security checks and results in unauthorized access that can compromise your organization's operating system environment, ESM, and customer data.",
+      "ruleNameRdfIri": "UC4_UNIX_RESOURCES_CMPSTE_R1",
+      "active": true,
+      "notes": "",
+      "ruleParameterRows": [
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 8,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "UPDATE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.DAEMON",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "FAC",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "FAC",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 7,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "DELETE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.DAEMON",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "FAC",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "FAC",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 29,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "READ",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.FILEATTR.SHARELIB",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "FAC",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "FAC",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 9,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "READ",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.DAEMON",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "FAC",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "FAC",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 4,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "READ",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.SUPERUSER",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "FAC",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "FAC",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 26,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "ADD",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.FILEATTR.SHARELIB",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "FAC",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "FAC",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 3,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "UPDATE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.SUPERUSER",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "FAC",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "FAC",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 25,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "EXECUTE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.FILEATTR.PROGCTL",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "FAC",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "FAC",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 6,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "ADD",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.DAEMON",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "FAC",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "FAC",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 28,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "UPDATE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.FILEATTR.SHARELIB",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "FAC",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "FAC",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 5,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "EXECUTE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.SUPERUSER",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "FAC",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "FAC",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 27,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "DELETE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.FILEATTR.SHARELIB",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "FAC",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "FAC",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 22,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "DELETE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.FILEATTR.PROGCTL",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "FAC",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "FAC",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 21,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "ADD",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.FILEATTR.PROGCTL",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "FAC",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "FAC",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 2,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "DELETE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.SUPERUSER",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "FAC",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "FAC",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 24,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "READ",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.FILEATTR.PROGCTL",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "FAC",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "FAC",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 1,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "ADD",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.SUPERUSER",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "FAC",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "FAC",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 23,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "UPDATE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.FILEATTR.PROGCTL",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "FAC",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "FAC",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 20,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "EXECUTE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.FILEATTR.APF",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "FAC",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "FAC",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 19,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "READ",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.FILEATTR.APF",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "FAC",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "FAC",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 18,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "UPDATE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.FILEATTR.APF",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "FAC",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "FAC",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 15,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "EXECUTE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.SRV.USERID",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "SUR",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "SUR",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 14,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "READ",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.SRV.USERID",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "SUR",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "SUR",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 17,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "DELETE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.FILEATTR.APF",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "FAC",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "FAC",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 16,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "ADD",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.FILEATTR.APF",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "FAC",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "FAC",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 11,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "ADD",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.SRV.USERID",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "SUR",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "SUR",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 10,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "EXECUTE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.DAEMON",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "FAC",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "FAC",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 13,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "UPDATE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.SRV.USERID",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "SUR",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "SUR",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 12,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "DELETE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.SRV.USERID",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "SUR",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "SUR",
+              "objectKey": 3005
+            }
+          ]
+        },
+        {
+          "impact": {
+            "sequenceNumber": 3,
+            "label": "Significant",
+            "rdfIri": "SIGNIFICANT"
+          },
+          "severity": {
+            "label": "High",
+            "sequenceNumber": 4,
+            "demerit": 50,
+            "rdfIri": "HIGH"
+          },
+          "active": true,
+          "sequenceNumber": 30,
+          "ruleParameterColumns": [
+            {
+              "objectName": "accessLevels",
+              "objectNameRdfIri": "UC4_OBJ_08_RSRC_ENTL_ACCESS_LEVELS",
+              "attribute": "EXECUTE",
+              "objectKey": 3008
+            },
+            {
+              "objectName": "resourceEntity",
+              "objectNameRdfIri": "UC4_OBJ_07_RSRC_ENTL_RESOURCE_ENTITY",
+              "attribute": "BPX.FILEATTR.SHARELIB",
+              "objectKey": 3007
+            },
+            {
+              "objectName": "resourceType",
+              "objectNameRdfIri": "UC4_OBJ_06_RSRC_ENTL_RESOURCE_TYPE",
+              "attribute": "FAC",
+              "objectKey": 3006
+            },
+            {
+              "objectName": "resourceClass",
+              "objectNameRdfIri": "UC4_OBJ_05_RSRC_ENTL_RESOURCE_CLASS",
+              "attribute": "FAC",
+              "objectKey": 3005
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "creator": "SIDEMO",
+  "updatedBy": null,
+  "createTimeStamp": null,
+  "updateTimestamp": null
+}
