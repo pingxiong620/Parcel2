@@ -29,7 +29,7 @@ function App() {
         <div style={{ paddingTop: "2em" }}>
           <button style={{ backgroundColor: "Yellow", borderColor: "Yellow", borderRadius: "3px", padding: "1em" }} onClick={() => {
             RiskConfigUtil.fixupRiskConfigData(testJson);
-          }}>Try to set a breakpoint in the method and then Click here</button>
+          }}>Try to set a breakpoint in the fixupRiskConfigData method (under util/RiskConfigUtil.tsx) and then Click here</button>
         </div>
       </header>
     </div>
